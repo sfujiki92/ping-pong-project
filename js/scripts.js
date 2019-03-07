@@ -1,21 +1,29 @@
 // Business Logic
-var numberInput = number.val();
+var number = $("#number").val();
+
 var pingPong = function(number) {
-  if (number % 3 === 0)
-    return "ping";
+  for (var i = 1; i <= number; i++) {
+    if (i % 3 === 0) {
+      $(".number").append("ping");
+    } else if (i % 5 ===0){
+      $(".number").append("pong");
+    } else {
+      $(".number").append(i);
+    }
+};
 };
 
 // User Interface Logic
 
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
-    event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
 
-    $(".number").text(number);
+  //  $(".number").text(number);
 
 
-
-    $("#result").show();
-  });
+  event.preventDefault();
+    //$("#result").show();
+    });
+  })
