@@ -37,7 +37,7 @@ _No known bugs at the moment._
 * _JavaScript_
 * _jQuery_
 
-[Click here](https://sfujiki92.github.io/ping-pong) to check out Ping Pong.
+[Click here](https://sfujiki92.github.io/ping-pong-project) to check out Ping Pong.
 
 ### License
 
